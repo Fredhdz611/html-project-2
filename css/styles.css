@@ -1,0 +1,86 @@
+:root {
+  --primary: #9C27B0;
+  --primaryDark: #89119D;
+  --secundary: #FFCE00;
+  --secundaryDark: rgb(233, 187, 2);
+  --withe: #FFF;
+  --black: #000;
+  
+  --mainFont: 'Staatliches', cursive;
+}
+
+
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px*/
+  box-sizing: border-box;
+  /*box model hack*/
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  /*box model hack*/
+}
+
+/* Globals */
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background-color: var(--primary);
+}
+p {
+  font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--withe);
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+h1, h2, h3 {
+  text-align: center;
+  color: var(--secundary);
+  font-family: var(--mainFont);
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.4rem;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: center;
+}
+.header__logo {
+  margin: 3rem 0;
+}
+
+/* Main navigation */
+.mainNav {
+  background-color: var(--primaryDark);
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /*Now flexbox support gap and we don't need to use margin*/
+}
+.mainNav__link {
+  font-family: var(--mainFont);
+  color: var(--withe);
+  font-size: 3rem;
+}
+.mainNav__link:hover, .mainNav__link--active {
+  color: var(--secundary);
+}
