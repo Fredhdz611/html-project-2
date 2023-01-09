@@ -23,11 +23,43 @@
       </a>
     </header>
     <nav class="mainNav">
-      <a class="mainNav__link mainNav__link--active" href="#">Tienda</a>
-      <a class="mainNav__link" href="#">Nosotros</a>
+      <a class="mainNav__link mainNav__link--active" href="index.html"
+        >Tienda</a
+      >
+      <a class="mainNav__link" href="nosotros.html">Nosotros</a>
     </nav>
-    <main>
-      <h1>Producto</h1>
+    <main class="container">
+      <h1>React JS</h1>
+      <div class="tshirt">
+        <img src="img/3.jpg" alt="Product img" class="tshirt__img" />
+        <div class="tshirt__description">
+          <p>
+            Elit pariatur aliqua occaecat anim officia sit ex fugiat dolore.
+            Ullamco et velit nostrud laboris nulla eu occaecat. Culpa sunt sunt
+            quis dolor cupidatat occaecat sit pariatur aliquip nisi eu quis
+            dolor dolor. Elit do occaecat Lorem ullamco anim.
+          </p>
+          <form class="form">
+            <select class="form__field">
+              <option disabled selected>-- Seleccionar Talla --</option>
+              <option>Chica</option>
+              <option>Mediana</option>
+              <option>Grande</option>
+            </select>
+            <input
+              class="form__field"
+              type="number"
+              placeholder="Cantidad"
+              min="1"
+            />
+            <input
+              class="form__submit"
+              type="submit"
+              value="Agregar al carrito"
+            />
+          </form>
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <p class="footer__txt">
